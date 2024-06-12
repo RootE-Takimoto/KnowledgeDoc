@@ -54,6 +54,20 @@ xeCJKがあれば基本的に和文のフォント設定は出来ます。欧文
         },
 ```
 
+```json
+        {
+            "name": "xetex",
+            "command": "xelatex",
+            "args": [
+                "-file-line-error",
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-halt-on-error",
+                "%DOC%"
+            ],
+        },
+```
+
 を追記して
 レシピに
 

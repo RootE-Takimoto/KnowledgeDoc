@@ -30,6 +30,19 @@ TeX Live+VS Code+LaTeX Workshopのインストールは終わっているもの�
                 "%DOC%"
             ]
         },
+        {
+        "name": "lualatex",
+        "command": "lualatex",
+        "args": [
+            "--cmdx",
+            "-file-line-error",
+            "-synctex=1",
+            "-interaction=nonstopmode",
+            "-halt-on-error",
+            "%DOC%"
+        ],
+        "env": {}
+        }
 ```
 
 を追記して
